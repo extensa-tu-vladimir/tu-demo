@@ -385,12 +385,7 @@ $modules = new Modules($this->registry);
 <div id="popup">
 	<div id="popup-inner">
 		<img src="" id="close-popup" alt="x" />
-		<br />
-		<br />
-		<br />
-		<br />
-		test sjdkljsdklj j jdfg 
-		test sjdkljsdklj j jdfg 
+<?php echo $popup_content; ?>
 	</div>
 </div>
 <script>
