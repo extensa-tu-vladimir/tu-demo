@@ -20,12 +20,16 @@
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-sort-order"><?php echo $entry_text; ?></label>
             <div class="col-sm-10">
-              <input type="text" name="text" value="" class="form-control" />
+              <textarea id="input-text" name="text" class="form-control"></textarea>
             </div>
           </div>
         </form>
       </div>
     </div>
   </div>
-</div>
+  <script type="text/javascript"><!--
+$('#input-text').summernote({
+	height: 300
+});
+//--></script></div>
 <?php echo $footer; ?>
