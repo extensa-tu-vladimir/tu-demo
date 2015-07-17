@@ -382,6 +382,24 @@ $modules = new Modules($this->registry);
 </head>	
 <body>
 
+<div id="popup">
+	<div id="popup-inner">
+		<img src="" id="close-popup" alt="x" />
+		<br />
+		<br />
+		<br />
+		<br />
+		test sjdkljsdklj j jdfg 
+		test sjdkljsdklj j jdfg 
+	</div>
+</div>
+<script>
+$( "#close-popup" ).click(function() {
+  $( "#popup" ).css( "display", "none" );
+});
+</script>
+
+
 <?php if($theme_options->get( 'widget_facebook_status' ) == 1) { ?>
 <div class="facebook_<?php if($theme_options->get( 'widget_facebook_position' ) == 1) { echo 'left'; } else { echo 'right'; } ?> hidden-xs hidden-sm">
 	<div class="facebook-icon"></div>
