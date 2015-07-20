@@ -89,10 +89,17 @@ class ControllerCommonHeader extends Controller {
 		$this->load->model('catalog/category');
 
 		$this->load->model('catalog/product');
+		
+		$this->load->model('catalog/popup');
 
 		$data['categories'] = array();
 
 		$categories = $this->model_catalog_category->getCategories(0);
+		
+		$popup = $this->model_catalog_popup->getPopup();
+		$popup['text'] = html_entity_decode($popup['text'], ENT_QUOTES, 'UTF-8');
+		$data['popup'] = $popup;
+		
 
 		foreach ($categories as $category) {
 			if ($category['top']) {

@@ -3110,9 +3110,16 @@ over
 }
 
 #popup-inner {
-	width: 50%;
-	height: 50%;
-	margin: 0px auto;
-	background: white;
-	opacity: 1;
+    height: 50%;
+    left: 30%;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    z-index: 200;
+	background: #fff;
+}
+#popup-content {
+	font-size: 12px;
+	text-align: center;
 }

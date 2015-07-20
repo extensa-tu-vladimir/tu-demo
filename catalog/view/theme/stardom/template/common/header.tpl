@@ -383,14 +383,17 @@ $modules = new Modules($this->registry);
 <body>
 
 <div id="popup">
-	<div id="popup-inner">
-		<img src="" id="close-popup" alt="x" />
-<?php echo $popup_content; ?>
-	</div>
 </div>
+<div id="popup-inner">
+	<img src="" id="close-popup" alt="x" />
+	<h1><?php echo $popup['title']; ?></h1>
+	<div id="popup-content"><?php echo $popup['text']; ?></div>
+</div>
+
 <script>
 $( "#close-popup" ).click(function() {
   $( "#popup" ).css( "display", "none" );
+  $( "#popup-inner" ).css( "display", "none" );
 });
 </script>
 
